@@ -48,7 +48,7 @@ id="ENCRYPTED[21b87c3a317d4b080f681b935a35c93c947a4397c88748f72911dee2812ccc7ac2
 #make test-api-stubs-docs || echo no problem
 
 #make aex -j10 \
-#	&& send_zip=$(up out/target/product/mido/*zip) && tg $id "Build Succeed!
-$send_zip" \
+#	&& send_zip=$(up out/target/product/RMX1851/*zip) && tg $id "Build Succeed!
+$send_zip \
 	|| tmate -S /tmp/tmate.sock new-session -d && tmate -S /tmp/tmate.sock wait tmate-ready && send_shell=$(tmate -S /tmp/tmate.sock display -p '#{tmate_ssh}') && tg $id "Build Failed" && tg $id "$send_shell" && ccache -s && sleep 2h
 ccache -s # Let's print ccache statistics finally
