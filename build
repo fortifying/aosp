@@ -30,13 +30,13 @@ up(){
 }
 
 tg(){
-	bot_api=1692865707:AAHvKZogI5sUGtqjd2sZvNl8tib0Q_xcYkY # Your tg bot api, dont use my one haha
+	bot_api="ENCRYPTED[63e2af52dfaa4053a6e8b325427804d780e35b43f3f35ab921d0cf7322effd4223437f1fa2f57831569cb4f298f43fb9]" # Your tg bot api, dont use my one haha
 	your_telegram_id=$1 # No need to touch 
 	msg=$2 # No need to touch
 	curl -s "https://api.telegram.org/bot${bot_api}/sendmessage" --data "text=$msg&chat_id=${your_telegram_id}"
 }
 
-id=571213272 # Your telegram id
+id="ENCRYPTED[21b87c3a317d4b080f681b935a35c93c947a4397c88748f72911dee2812ccc7ac2b2f5a1bbb6fa138de688b6a98fcde5]" # Your telegram id
 
 # Build command! j10 for 10 cpu, j8 for 8 cpu, otherwise memeroy will end up even its 24G
 # Upload rom zip file if succeed to build! Send notification to tg! And send shell to tg if build fails!
