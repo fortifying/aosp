@@ -20,5 +20,4 @@ steps:
      GH_PUSH_REPO_URL:
        from_secret: GH_PUSH_REPO_URL
    commands:
-     - sudo apt install git-lfs -y
      - bash llvm-tc_build.sh
